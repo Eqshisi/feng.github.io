@@ -1,1 +1,115 @@
-<h1>1111</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发票信息</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: #000;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .header-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .header-icon {
+            font-size: 20px;
+            color: #333;
+        }
+        .title-section {
+            text-align: center;
+            padding: 20px 15px;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+        }
+        .invoice-info {
+            padding: 15px;
+            flex: 1;
+        }
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #f5f5f5;
+        }
+        .info-label {
+            font-weight: 500;
+            color: #333;
+        }
+        .info-value {
+            color: #333;
+        }
+        .footer-note {
+            text-align: center;
+            padding: 20px 15px;
+            font-size: 13px;
+            color: #999;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-section">
+        <h1 class="title">发票信息</h1>
+        <p class="subtitle">以下信息仅为发票二维码所含信息，并不代表查验发票真伪的结果。</p>
+    </div>
+
+    <div class="invoice-info">
+        <div class="info-item">
+            <span class="info-label">发票代码</span>
+            <span class="info-value">033002300411</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">发票号码</span>
+            <span class="info-value">19926246</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">合计金额</span>
+            <span class="info-value">¥12000000(不含税)</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">开票日期</span>
+            <span class="info-value">2025.09.04</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">发票校验码</span>
+            <span class="info-value">10535395323916845023</span>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        如需查验发票真伪，请通过税务机关提供的官方渠道进行查验。
+    </div>
+
+    <footer style="text-align: center; padding: 20px; font-size: 12px; color: #999;">
+    </footer>
+</body>
+</html>
